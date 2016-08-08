@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1-2</title>
+	<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		font-family: 'Microsoft YaHei';
+		background-color: #ddd;
+	}
+	.fl{
+		float: right;
+	}
+	.fr{
+		float: right;
+	}
+/*导航开始*/
+	.header{
+		position: relative;
+		height: 80px;
+		background-color: #333;
+		/*font-size: 14px;
+		font-family: :黑体;
+		color: #fff;
+		width: 100%;*/   /*多余*/
+	}
+	.header img{
+		/*position: absolute;
+		top: 0;
+		left: 50px;
+		display: inline-block;
+		width: 100px;*/   /*多余换成padding*/
+		padding-left: 50px;
+		height:80px;
+	}
+	.nav ul{
+		/*list-style: none;
+		padding: 0;
+		margin-right: 60px;*/
+		 position:absolute;
+		 top:0;
+		 right:30px;
+	}
+	.nav ul li{
+		width:80px;
+		display:block;
+		float: left;
+		padding: 0 10px;
+		line-height: 80px;
+		text-align: center;
+	}
+	.nav ul li a{
+		text-decoration: none;
+		font-size: 12px;
+		font-family: :黑体;
+		color: #fff;
+		width: 100px;
+		display: inline-block;
+	}
+	.nav li a:hover{
+		/*background: #000;*/
+    	background: #474747;
+		border-radius: 3px;
+
+	}
+	.nav li a.active{
+		color: #000;
+		background: #fff;
+	}
+/*导航结束*/
+	
+/*内容*/
+	.container article,aside{
+		margin: 20px;
+		background-color: #fff;
+		box-shadow: 2px 2px 3px #aaaaaa;
+		padding: 40px 22px;
+	}
+	.container h2{
+		font-size: 20px;
+		padding-bottom:22px;
+	}
+	.container h3{
+		font-size: 16px;
+		color: #636161;
+		padding-bottom: 14px;
+	}
+	.zz {
+		font-size: 14px;
+		color:#78735d;
+		display: inline-block;
+		padding-bottom: 22px;
+	}
+	.pic{
+		width: 400px;
+		height: 300px;
+		padding:20px 0;
+	}
+/*一结束*/
+	.container p{
+		font-size: 14px;
+		line-height:24px;
+	}
+	.sj{
+		text-indent: 2em;
+	}
+	.container ul{
+		list-style: none;
+		padding-left: 20px;
+	}
+/*二结束*/
+	article dl dd{
+		width: 160px;
+		margin: 0 0 20px 30px;
+		border: 1px solid #ddd;
+	}
+	article dl dd span{
+		margin: 8px 0;
+		text-align: center;
+		height: 20px;
+	    line-height: 15px;
+	    font-size: 12px;
+	    display: block;
+	}
+	article dl dd img{
+		width: 150px;
+		padding-bottom: 10px;
+	}
+/*三结束*/
+	h1{
+		margin-bottom: 20px;
+	}
+	ol{
+		margin-left:30px;
+		margin-bottom: 20px;
+	}
+	article table{
+		width: 100%;
+		font-size: 14px;
+		border-collapse: collapse;/*为表格设置合并边框模型*/
+	}
+	article table tr th{
+		background-color: #333;
+		color: #fff;
+		text-align: left;
+		padding: 5px;
+		border: 1px solid #ccc;
+	}
+	article table tr td{
+		border: 1px solid #ccc;
+		padding: 5px;
+	}
+	.las{
+		background-color: #ccc;
+	}
+/*四结束*/
+	aside h4{
+		height: 40px;
+		line-height: 40px;
+		padding-left: 10px;
+		border-left: 4px solid #bbb8b8;
+	}
+	aside form div{
+		margin: 15px;
+		font-size: 12px;
+	}
+	aside form div .tips{
+		float:left;           /*添加后个人描述四个字才和文本域上对齐*/
+	    text-align:right;
+	    width:35%;
+	    padding-right:15px;
+	}
+	aside form div p{
+		margin-left:35%;
+	    padding-left:15px;
+	    font-size:12px;
+	    color: #aaa;
+	}
+	aside textarea{
+		width: 50%;
+		height: 100px;
+	}
+	.btn{
+		width: 100%;
+		height:40px;
+		line-height: 40px;
+		color: #fff;
+		border: none;
+		text-align: center;
+		background-color: #3355d0;
+	}
+
+/*侧栏结束*/
+	footer{
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		font-size: 12px;
+		color: #fff;
+		background-color: #000;
+	}
+/*底部结束*/
+/*内容*/
+	</style>
+</head>
+<body>
+	<div class="header">
+		<a href="#">
+			<img src="images/02.png" alt="">
+		</a>
+		<div class="nav"><!-- 这里应该把div换成nav -->
+			<ul>
+				<li><a href="">导航链接一</a></li>
+				<li><a href="">导航链接二</a></li>
+				<li><a href="">导航链接三</a></li>
+				<li><a href="" class="active">导航链接四</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<article>
+			<h2>文章一级标题</h2>
+			<h3>文章耳机标题</h3>
+			<span class="zz">文章作者</span>
+			<span class="zz">文章发表时间</span>
+			<p>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落</p>
+			<p>这是一个很长很长的段落<a href="">这是一个很长很长的段落</a><b>这是一个很长很长的段落</b>这是一个很长很长的段落</p>
+			<img src="images/01.jpeg" class="pic">
+			<p>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落</p>
+			<p>这是一个很长很长的段落<a href="">这是一个很长很长的段落</a><b>这是一个很长很长的段落</b>这是一个很长很长的段落</p>
+		</article>
+		<article>
+			<h2>文章一级标题</h2>
+			<h3>文章耳机标题</h3>
+			<span>文章作者</span>
+			<span>文章发表时间</span>
+			<p class="sj">这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落</p>
+			<p>这是一个很长很长的段落<a href="">这是一个很长很长的段落</a><b>这是一个很长很长的段落</b>这是一个很长很长的段落</p>
+			<img src="images/01.jpeg" class="pic">
+			<ul>
+				<li>列表项目一</li>
+				<li>列表项目二</li>
+				<li>列表项目三</li>
+			</ul>
+		</article>
+		<article>
+			<h2>图片</h2>
+			<dl>
+				<dt></dt>
+				<dd><span>宫园薰</span><img src="images/03.jpg" alt="宫园薰"></dd>
+				<dd><span>宫园薰</span><img src="images/03.jpg" alt="宫园薰"></dd>
+				<dd><span>宫园薰</span><img src="images/03.jpg" alt="宫园薰"></dd>
+				<dd><span>宫园薰</span><img src="images/03.jpg" alt="宫园薰"></dd>
+				<dd><span>宫园薰</span><img src="images/03.jpg" alt="宫园薰"></dd>
+				<dd><span>宫园薰</span><img src="images/03.jpg" alt="宫园薰"></dd>
+			</dl>
+		</article>
+		<article>
+			<h1>最后一个文章一级标题</h1>
+			<h2>文章的二级标题</h2>
+			<span class="zz">文章作者</span>
+			<span class="zz">文章发表时间</span>
+			<ol>
+				<li>排名1</li>
+				<li>排名2</li>
+				<li>排名3</li>
+			</ol>
+			<p>下面是一个表格</p>
+			<table>
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+				<tr>
+					<td>表格单元格内容</td>
+					<td>表格单元格内容</td>
+					<td><a href="">操作</a></td>
+				</tr>
+				<tr>
+					<td>表格单元格内容</td>
+					<td>表格单元格内容</td>
+					<td><a href="">操作</a></td>
+				</tr>
+				<tr>
+					<td>表格单元格内容</td>
+					<td>表格单元格内容</td>
+					<td><a href="">操作</a></td>
+				</tr>
+				<tr>
+					<td>表格单元格内容</td>
+					<td>表格单元格内容</td>
+					<td><a href="">操作</a></td>
+				</tr>
+				<tr class="las">
+					<td>总计</td>
+					<td colspan="2">1000</td>
+				</tr>
+			</table>
+		</article>
+	</div>
+	<aside>
+		<h4>这里是一个侧栏，这是侧栏的标题</h4>
+		<form action="" method="post">
+            <div>
+                <label class="tips">请输入邮箱地址</label>
+
+                <input type="text" placeholder="这是一个文本框" />
+                <p>邮箱地址请按要求格式输入</p>
+            </div>
+            <div>
+                <label class="tips">请输入密码</label>
+                <input type="password" placeholder="@@@@@@@@@@" />
+            </div>
+            <div>
+                <label class="tips">请重复输入密码</label>
+                <input type="password" placeholder="@@@@@@@@@@" />
+                <p>密码请为6-16位英文数字</p>
+            </div>
+        </form>
+        <form>
+            <div>
+                    <label class="tips">性别</label>
+                    <input type="radio" value="male" name="sex" checked="checked" />
+                    <label>男</label>
+                    <input type="radio" value="female" name="sex" />
+                    <label>女</label>
+            </div>
+            <div>
+                    <label class="tips">城市</label>
+                    <select>
+                        <option value="北京">北京</option>
+                        <option value="上海" selected="selected">上海</option>
+                        <option value="广州">广州</option>
+                    </select>
+            </div>
+            <div>
+                    <label class="tips">爱好</label>
+                    <input type="checkbox" value="sport" name="hobby" />
+                    <label>运动</label>
+                    <input type="checkbox" value="art" name="hobby" />
+                    <label>艺术</label>
+                    <input type="checkbox" value="science" name="hobby" />
+                    <label>科学</label>
+            </div>
+            <div>
+                    <label class="tips">个人描述</label>
+                    <textarea rows="2" cols="20" >这是一个多行输入框</textarea>
+             </div>
+        </form>
+         <input type="button" class="btn" value="确认提交" />
+	</aside>
+	<footer>
+
+        <p>版权所有ⓒApathy</p>
+    </footer>
+</body>
+</html>
